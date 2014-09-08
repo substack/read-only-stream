@@ -3,6 +3,8 @@
 wrap a readable/writable stream to be read-only
 to prevent mucking up the input side
 
+[![build status](https://secure.travis-ci.org/substack/read-only-stream.png)](http://travis-ci.org/substack/read-only-stream)
+
 # example
 
 Suppose you have a module that uses a readable/writable stream internally but
