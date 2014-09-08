@@ -11,6 +11,7 @@
     "concat-stream": "^1.4.6",
     "tape": "^2.13.2",
     "through2": "~0.6.1",
+    "through": "^2.3.4",
     "covert": "^1.0.0"
   },
   "scripts": {
