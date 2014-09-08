@@ -1,7 +1,10 @@
 var Readable = require('readable-stream/readable');
+var rwrap = require('readable-wrap');
 
 module.exports = function (stream) {
     var opts = stream._readableState;
+    if (typeof stream.read !== 'function') stream = rwrap(stream, opts);
+    
     var ro = new Readable({ objectMode: opts && opts.objectMode });
     var waiting = false;
     
