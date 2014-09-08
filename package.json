@@ -8,8 +8,9 @@
     "readable-wrap": "^1.0.0"
   },
   "devDependencies": {
-    "through2": "~0.6.1",
-    "tape": "^2.13.2"
+    "concat-stream": "^1.4.6",
+    "tape": "^2.13.2",
+    "through2": "~0.6.1"
   },
   "scripts": {
     "test": "tape test/*.js"
