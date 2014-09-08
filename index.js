@@ -1,7 +1,8 @@
 var Readable = require('readable-stream/readable');
 
 module.exports = function (stream) {
-    var ro = new Readable;
+    var opts = stream._readableState;
+    var ro = new Readable({ objectMode: opts && opts.objectMode });
     var waiting = false;
     
     stream.on('readable', function () {
