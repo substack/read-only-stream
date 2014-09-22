@@ -24,5 +24,6 @@ module.exports = function (stream) {
         if (reads === 0) waiting = true;
     };
     stream.once('end', function () { ro.push(null) });
+    stream.on('error', function (err) { ro.emit('error', err) });
     return ro;
 };
