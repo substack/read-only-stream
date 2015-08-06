@@ -4,15 +4,15 @@
   "description": "wrap a readable/writable stream to be read-only",
   "main": "index.js",
   "dependencies": {
-    "readable-stream": "^1.0.31",
+    "readable-stream": "^2.0.2",
     "readable-wrap": "^1.0.0"
   },
   "devDependencies": {
-    "concat-stream": "^1.4.6",
-    "tape": "^2.13.2",
-    "through2": "~0.6.1",
-    "through": "^2.3.4",
-    "covert": "^1.0.0"
+    "concat-stream": "^1.5.0",
+    "covert": "^1.1.0",
+    "tape": "^4.0.2",
+    "through": "^2.3.8",
+    "through2": "^2.0.0"
   },
   "scripts": {
     "test": "tape test/*.js",
